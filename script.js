@@ -12,7 +12,6 @@ function func2() {
     document.getElementsByClassName('img2')[0].setAttribute('src', source);
     if (randomNumber1 == randomNumber2) {
         document.getElementsByClassName('result')[0].innerHTML = "Draw";
-
     }
     else if (randomNumber1 > randomNumber2) {
         document.getElementsByClassName('result')[0].innerHTML = "player 1 wins";
