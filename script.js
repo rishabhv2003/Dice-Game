@@ -1,22 +1,20 @@
 var randomNumber1, randomNumber2
-var image1, source, check1 = 1, check2 = -1;
-
-
+var image1, source, check = 1;
 
 function func1() {
-    if (check1 == -1) {
-        alert("you can not move player 1");
+    if (check == -1) {
+        alert("You can't move Player 1");
         return;
     }
     randomNumber1 = Math.floor(Math.random() * 6) + 1;
     source = "images/dice" + randomNumber1 + ".png";
     document.getElementsByClassName('img1')[0].setAttribute('src', source);
-    check1 = -1;
+    check = -1;
 }
 
 function func2() {
-    if (check1 == 1) {
-        alert("you can not move player 2");
+    if (check == 1) {
+        alert("You can't move Player 2");
         return;
     }
     randomNumber2 = Math.floor(Math.random() * 6) + 1;
@@ -31,5 +29,5 @@ function func2() {
     else {
         document.getElementsByClassName('result')[0].innerHTML = "Player 2 wins";
     }
-    check1 = 1;
+    check = 1;
 }
