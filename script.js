@@ -1,11 +1,12 @@
 var randomNumber1, randomNumber2
-var image1, source, check = -1;
+var image1, source;
+
 function func1() {
-    check = 0;
     randomNumber1 = Math.floor(Math.random() * 6) + 1;
     source = "images/dice" + randomNumber1 + ".png";
     document.getElementsByClassName('img1')[0].setAttribute('src', source);
 }
+
 function func2() {
     randomNumber2 = Math.floor(Math.random() * 6) + 1;
     source = "images/dice" + randomNumber2 + ".png";
