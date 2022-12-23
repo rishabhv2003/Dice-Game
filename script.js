@@ -4,7 +4,7 @@ var image1, source, check1 = 1, check2 = -1;
 
 
 function func1() {
-    if (check1 == -1 && check2 == 1) {
+    if (check1 == -1) {
         alert("you can not move player 1");
         return;
     }
@@ -12,11 +12,10 @@ function func1() {
     source = "images/dice" + randomNumber1 + ".png";
     document.getElementsByClassName('img1')[0].setAttribute('src', source);
     check1 = -1;
-    check2 = 1;
 }
 
 function func2() {
-    if (check1 == 1 && check2 == -1) {
+    if (check1 == 1) {
         alert("you can not move player 2");
         return;
     }
@@ -33,5 +32,4 @@ function func2() {
         document.getElementsByClassName('result')[0].innerHTML = "Player 2 wins";
     }
     check1 = 1;
-    check2 = -1;
 }
